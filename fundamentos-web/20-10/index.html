@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Pagina de perfil</title>
+</head>
+
+<body>
+    <nav class="flex-row">
+        <h1>Perfil</h1>
+        <ul class="flex-row nav-menu">
+            <li>
+                <a href="#">Inicio</a>
+            </li>
+            <li>
+                <a href="#">Mi perfil</a>
+            </li>
+            <li>
+                <a href="#">Encontrar conexiones</a>
+            </li>
+            <li>
+                <a href="#" id="login">Cerrar sesión</a>
+            </li>
+        </ul>
+    </nav>
+    <main class="flex-row">
+
+        <!-- Contenedor a la izquierda -->
+        <section class="flex-column section-left-top">
+            <!-- Tarjeta de usuario -->
+            <section class="slt-tarjeta card">
+                <div class="top-tarjeta">
+                    <!-- <img src="" alt=""> -->
+                </div>
+
+                <div class="bottom-tarjeta">
+                    <img src="./imgs/82470b4ed44c3edacfcd4201e2297050.jpg" alt="Imagen de perfil" id="img-perfil">
+                    <h1>Valeria Romero</h1>
+                    <p>Cartago, Costa Rica</p>
+                    <p>Diseñadora UI/UX | Full stack developer | Amante de los gatitos</p>
+                    <p>Un parrafo con mucho texto bien bonito, escrito, blab bla bla</p>
+                    <a href="#" class="flex-row">
+                        <span class="material-symbols-outlined">settings</span>
+                        Edit profile
+                    </a>
+                </div>
+            </section>
+
+            <!-- Informacion educacion  -->
+            <section class="slb-educacion card">
+                <h1>Education</h1>
+                <p>Coding Dojo</p>
+                <p>Bootcamp full stack 2020</p>
+                <p>JS - Python - Java</p>
+            </section>
+        </section>
+
+        <!-- Contenedor a la derecha -->
+        <section class="flex-column section-right-top">
+            <!-- Solicitudes de amistad -->
+            <section class="card">
+                <h1>Solicitudes de conexion</h1>
+                <div class="flex-row solicitud-conexion">
+                    <div class="flex-row conexion">
+                        <img src="./imgs/default-avatar-icon-of-social-media-user-vector.jpg"
+                            alt="Imagen default de perfil" class="img-conexion-perfil">
+                        <p class="conexion-nombre">Nombre Apellido</p>
+                    </div>
+                    <div class="conexion-icons">
+                        <span class="material-symbols-outlined aceptar">
+                            check_circle
+                        </span>
+                        <span class="material-symbols-outlined rechazar">
+                            cancel
+                        </span>
+                    </div>
+                </div>
+
+                <div class="flex-row solicitud-conexion">
+                    <div class="flex-row conexion">
+                        <img src="./imgs/default-avatar-icon-of-social-media-user-vector.jpg"
+                            alt="Imagen default de perfil" class="img-conexion-perfil">
+                        <p class="conexion-nombre">Nombre Apellido</p>
+                    </div>
+                    <div class="conexion-icons">
+                        <span class="material-symbols-outlined aceptar">
+                            check_circle
+                        </span>
+                        <span class="material-symbols-outlined rechazar">
+                            cancel
+                        </span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Amistades -->
+            <section class="card">
+                <h1>Conexiones <span id="numero-conexiones">6</span></h1>
+                <div class="flex-row conexion">
+                    <img src="./imgs/default-avatar-icon-of-social-media-user-vector.jpg" alt="Imagen default de perfil"
+                        class="img-conexion-perfil">
+                    <p class="conexion-nombre">Nombre Apellido</p>
+                </div>
+                <div class="flex-row conexion">
+                    <img src="./imgs/default-avatar-icon-of-social-media-user-vector.jpg" alt="Imagen default de perfil"
+                        class="img-conexion-perfil">
+                    <p class="conexion-nombre">Nombre Apellido</p>
+                </div>
+                <div class="flex-row conexion">
+                    <img src="./imgs/default-avatar-icon-of-social-media-user-vector.jpg" alt="Imagen default de perfil"
+                        class="img-conexion-perfil">
+                    <p class="conexion-nombre">Nombre Apellido</p>
+                </div>
+                <div class="flex-row conexion">
+                    <img src="./imgs/default-avatar-icon-of-social-media-user-vector.jpg" alt="Imagen default de perfil"
+                        class="img-conexion-perfil">
+                    <p class="conexion-nombre">Nombre Apellido</p>
+                </div>
+                <div class="flex-row conexion">
+                    <img src="./imgs/default-avatar-icon-of-social-media-user-vector.jpg" alt="Imagen default de perfil"
+                        class="img-conexion-perfil">
+                    <p class="conexion-nombre">Nombre Apellido</p>
+                </div>
+                <div class="flex-row conexion">
+                    <img src="./imgs/default-avatar-icon-of-social-media-user-vector.jpg" alt="Imagen default de perfil"
+                        class="img-conexion-perfil">
+                    <p class="conexion-nombre">Nombre Apellido</p>
+                </div>
+            </section>
+        </section>
+
+    </main>
+</body>
+
+</html>

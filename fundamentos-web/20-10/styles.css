@@ -1,0 +1,141 @@
+*{
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 1,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+}
+
+main {
+    height: calc(100% - 6rem);
+    width: calc(100% - 6rem) ;
+    justify-content: space-between;
+    gap: 7rem;
+    padding: 3rem;
+}
+
+.flex-row {
+    display: flex;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    border-radius: 1rem;
+    box-shadow: .1rem .1rem .5rem rgb(206, 206, 206);
+}
+
+.slt-tarjeta {
+    flex: 8;
+    /* border: 1px solid red; */
+    overflow: hidden;
+}
+
+.slb-educacion {
+    flex: 1;
+    padding: 0 2rem;
+}
+
+#img-perfil {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    border: .3rem solid white;
+}
+
+.top-tarjeta {
+    height: 10rem;
+    width: 100%;
+    background-color: rgb(45, 137, 137);
+}
+
+.bottom-tarjeta {
+    margin-top: -5rem;
+    padding: 0 2rem;
+}
+
+.bottom-tarjeta a{
+    color: rgb(2, 155, 207);
+    align-items: center;
+    gap: .3rem;
+}
+
+.section-left-top {
+    gap: 2rem;
+    flex: 3;
+}
+
+.section-right-top{
+    gap: 2rem;
+    flex: 2;
+}
+
+.img-conexion-perfil{
+    width: 3rem;
+    height: auto;
+    border-radius: 50%;
+}
+
+.solicitud-conexion{
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav{
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    background-color: rgb(33, 33, 33);
+    color: white;
+}
+
+nav h1{
+    color: white;
+}
+
+.nav-menu{
+    gap: 2rem;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+li{
+    list-style-type: none;
+}
+
+h1{
+    font-size: 2rem;
+    color: rgb(53, 53, 53);
+}
+
+.section-right-top h1{
+    margin-left: 1rem;
+}
+
+#login{
+    background-color: rgb(51, 119, 126);
+    padding: 1rem 1.2rem;
+    color: white;
+    font-weight: bold;
+    border-radius: .3rem;
+}
+
+.conexion{
+    padding: .5rem 1rem;
+    gap: 1rem;
+}
+
+.conexion-icons{
+    margin-right: 1rem;
+}
