@@ -24,7 +24,7 @@
                 <a href="#">Encontrar conexiones</a>
             </li>
             <li>
-                <a href="#" id="login">Cerrar sesión</a>
+                <a href="#" id="login" onclick="login(this)">Cerrar sesión</a>
             </li>
         </ul>
     </nav>
@@ -69,13 +69,13 @@
                     <div class="flex-row conexion">
                         <img src="./imgs/default-avatar-icon-of-social-media-user-vector.jpg"
                             alt="Imagen default de perfil" class="img-conexion-perfil">
-                        <p class="conexion-nombre">Nombre Apellido</p>
+                        <p class="conexion-nombre">Nombre Apellido 1</p>
                     </div>
                     <div class="conexion-icons">
-                        <span class="material-symbols-outlined aceptar">
+                        <span class="material-symbols-outlined aceptar" onclick="aceptarConexion(this)">
                             check_circle
                         </span>
-                        <span class="material-symbols-outlined rechazar">
+                        <span class="material-symbols-outlined rechazar" onclick="rechazarConexion(this)">
                             cancel
                         </span>
                     </div>
@@ -85,13 +85,13 @@
                     <div class="flex-row conexion">
                         <img src="./imgs/default-avatar-icon-of-social-media-user-vector.jpg"
                             alt="Imagen default de perfil" class="img-conexion-perfil">
-                        <p class="conexion-nombre">Nombre Apellido</p>
+                        <p class="conexion-nombre">Nombre Apellido 2</p>
                     </div>
                     <div class="conexion-icons">
-                        <span class="material-symbols-outlined aceptar">
+                        <span class="material-symbols-outlined aceptar" onclick="aceptarConexion(this)">
                             check_circle
                         </span>
-                        <span class="material-symbols-outlined rechazar">
+                        <span class="material-symbols-outlined rechazar" onclick="rechazarConexion(this)">
                             cancel
                         </span>
                     </div>
@@ -99,7 +99,7 @@
             </section>
 
             <!-- Amistades -->
-            <section class="card">
+            <section class="card" id="conexiones">
                 <h1>Conexiones <span id="numero-conexiones">6</span></h1>
                 <div class="flex-row conexion">
                     <img src="./imgs/default-avatar-icon-of-social-media-user-vector.jpg" alt="Imagen default de perfil"
@@ -135,6 +135,7 @@
         </section>
 
     </main>
+    <script src="./script.js"></script>
 </body>
 
 </html>
