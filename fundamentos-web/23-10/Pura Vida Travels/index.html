@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Pura vida travels</title>
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav>
+        <span class="logo">Pura Vida Travels</span>
+        <ul class="menu">
+            <li>Destinos</li>
+            <li>Paquetes</li>
+            <li>Mis viajes</li>
+            <button onclick="cambiarTexto(this)">Iniciar sesión</button>
+        </ul>
+    </nav>
+    <!-- Banner -->
+    <div class="banner1" onmouseover="cambiarImagen(this)" onmouseout="regresarImagen(this)" >
+        <h1>Bienvenidos a <br> Pura Vida Travels</h1>
+    </div>
+    <!-- Elemento principal -->
+    <main>
+        <h2>Haz click en cada animal para saber su destino favorito</h2>
+        <div class="animales">
+            <img src="./imgs/lapa.jpg" alt="Imagen lapa" class="animal" id="lapa" onclick="destino(this)">
+            <img src="./imgs/rana.jpg" alt="Imagen rana" class="animal" id="rana" onclick="destino(this)">
+            <img src="./imgs/tucan.jpg" alt="Imagen tucan" class="animal" id="tucan" onclick="destino(this)">
+        </div>
+    </main>
+    <script src="./script.js" ></script>
+</body>
+</html>
