@@ -6,23 +6,23 @@ public class TiendaOnline {
         // Mensajes de la aplicación
         String mensajeBienvenida = "Bienvenido a nuestra tienda en línea, ";
         String mensajeConfirmacion = ", tu pedido ha sido confirmado";
-        String mensajeRechazo = ", lamentablemente el artículo seleccionado está agotado";
+        // String mensajeRechazo = ", lamentablemente el artículo seleccionado está agotado";
         String mensajeMostrarTotal = "El total de tu compra es: $";
 
         // Variables de productos (agrega las tuyas a continuación)
         double precioLibro = 15.99;
-        double precioCamiseta = 25.50;
+        // double precioCamiseta = 25.50;
         double precioPantalon = 29.99; //Producto nuevo
         double precioZapatos = 59.99; //Producto nuevo
 
         // Variables de clientes (agrega las tuyas a continuación)
         String cliente1 = "Ana";
-        String cliente2 = "Alex"; //Usuario nuevo
+        // String cliente2 = "Alex"; //Usuario nuevo
         String cliente3 = "Miguel"; //Usuario nuevo
 
         // Estado de pedidos (agrega las tuyas a continuación)
         boolean pedidoConfirmadoCliente1 = true; //Ana
-        boolean pedidoConfirmadoCliente2 = false; //Alex
+        // boolean pedidoConfirmadoCliente2 = false; //Alex
         boolean pedidoConfirmadoCliente3 = true; //Miguel
 
         // INTERACCIÓN DE LA APLICACIÓN
