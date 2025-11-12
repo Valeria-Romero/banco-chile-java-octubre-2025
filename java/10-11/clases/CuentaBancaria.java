@@ -70,4 +70,19 @@ public class CuentaBancaria {
             System.out.println("Monto no valido para retiro");
         }
     }
+
+    // Metodo para mostrar la informacion de esa cuenta
+    public void despliegaInformacion(){
+        System.out.println("Numero de cuenta: " + numeroCuenta);
+        System.out.println("Titular de la cuenta: " + titular.getNombre() + " edad: " + titular.getEdad() );
+        System.out.println("Saldo de la cuenta: " + saldo);
+    }
+
+    // Metodo para mostrar la informacion de todas la cuentas bancarias
+    public static void imprimeInformacionDeTodasLasCuentas(){
+        for(CuentaBancaria cuenta : listaDeCuentasBancarias){
+            cuenta.despliegaInformacion();
+            System.out.println("-------------------------------------");
+        }
+    }
 }
