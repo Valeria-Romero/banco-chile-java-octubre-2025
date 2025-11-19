@@ -4,9 +4,11 @@ import java.util.HashMap;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+//import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+//@RequestMapping("/peliculas")
 public class ControladorPeliculas {
 
 	private static HashMap<String, String> listaPeliculas = new HashMap<String, String>();
@@ -44,4 +46,26 @@ public class ControladorPeliculas {
 		return "La película no se encuentra en nuestra lista.";
 	}
 	
+	
+	@GetMapping("/peliculas/director/{nombre}")
+	public String obtenerPeliculasPorDirector(@PathVariable String nombre) {
+		String resultado = "";
+		boolean encontrado = false;
+		
+		for(String pelicula : listaPeliculas.keySet()) {
+			String director = listaPeliculas.get(pelicula);
+			
+			if(director.equalsIgnoreCase(nombre)) {
+				resultado += pelicula + "<br>";
+				encontrado = true;
+			}
+		}
+		
+		if(!encontrado) {
+			return "No contamos con películas con ese director en nuestra lista.";
+		}
+		
+		return "Peliculas de " + nombre + "<br>" + resultado;
+		
+	}
 }
