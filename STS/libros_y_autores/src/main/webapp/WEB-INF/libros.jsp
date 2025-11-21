@@ -13,10 +13,12 @@
 		<c:forEach var="nombre" items="${listaLibros.keySet()}">
 		
 			<li>
-				<c:out value="${nombre}"/>
-			</li>
-		
+				<a href="/libros/${nombre}">
+					<c:out value="${nombre}"/>				
+				</a>
+			</li>		
 		</c:forEach>
 	</ul>
+	<a href="/libro/formulario">Agregar nuevo libro</a>
 </body>
 </html>
